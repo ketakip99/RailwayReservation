@@ -1,0 +1,214 @@
+/* Reset and general styles */
+@import url("https://api.fontshare.com/v2/css?f[]=general-sans@200,500,300,600,400,700&display=swap");
+
+
+/* Your existing CSS styles */
+
+
+
+video#loading-video {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 9999;
+    width: 90%; /* Increase the width to 90% of the viewport width */
+    height: 90%; /* Increase the height to 90% of the viewport height */
+}
+
+/* Rest of your CSS remains the same */
+
+
+
+/* Rest of your CSS styles */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'General Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+}
+
+
+nav {
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    font-size: 20px;
+}
+
+.logo a {
+    font-size: 45px;
+    text-decoration: none;
+}
+
+span {
+    color: hsl(183, 81%, 35%);
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: hsl(183, 81%, 35%);
+}
+
+a {
+    color: #ffffff;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    padding: 3% 12%;
+    padding-top: 0%;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 5% 10%;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #999999;
+    gap: 12px;
+}
+
+.form > h2 {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.show {
+    display: flex;
+    justify-content: space-between; /* Adjust button positioning */
+}
+
+.role-btn {
+    width: 48%; /* Adjust button width */
+    margin: 5px; /* Adjust margin for spacing */
+}
+
+.btn:hover {
+    background-color: #000000;
+    border: 2px solid hsl(183, 81%, 35%);
+    color: white;
+}
+
+
+a {
+	color: white;
+}
+.cards{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 55px;
+    background-color: transparent;
+    margin-top: -10px;
+    padding: 20px 60px;
+    padding-top: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
+    height: 50vh;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+
+.cards:hover > .card:hover{
+    filter: saturate(100%);
+    box-shadow: 0 0 25px 12px rgba(255, 255, 255, 0.2);
+}
+
+.card > figure{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+}
+
+.card > figure > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 200%;
+    min-height: 100%;
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(0.5); 
+    transition: transform ease 0.4s;
+}
+
+.card:hover > figure > img{
+    transform: translate(-50%, -50%) scale(0.55);
+}
+
+.card > .details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #182628;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all ease 0.4s;
+}
+
+.card > .details > button{  
+    width: 100%;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 18px;
+    background-color: #EDF5E1;
+    color: #000000;
+    border: 1px solid #EDF5E1;
+    padding: 10px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.card > .details > button:hover{
+    background-color: transparent;
+    color: #EDF5E1;
+    border: 1px solid #EDF5E1;
+}
+
+.card > .details > p{
+    font-size: 15px;
+    color: #EDF5E1;
+}

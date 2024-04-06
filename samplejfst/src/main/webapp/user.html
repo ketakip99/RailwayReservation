@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/user.css">
+    <title>User</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <a href="#">Bharat<span>Rails.</span></a>
+        </div>
+        <ul>
+          <li><a href="choice.html">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <form class="form" onsubmit="return validateForm()"> 
+                <h2><b>Passenger Choice</b></h2>
+
+                <div>
+                    <input type="button" class="submitBtn" onclick="loadNextPage1()" value="Login"></input>
+                </div>
+
+                <div>
+                    <input type="button" class="submitBtn" onclick="loadNextPage()" value="Sign Up"></input>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function loadNextPage1() {
+        
+            window.location.href = 'userLogin.jsp';
+        
+    }
+    function loadNextPage() {
+            window.location.href = 'userSignup.jsp';
+    }
+
+</script>
+</html>

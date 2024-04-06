@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href='css/home.css' />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="#">Bharat<span>Rails.</span></a>
+        </div>
+        <ul>
+          <li><a href="choice.html">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <!-- <div class="buttons">
+          <a href="#" class="login">Log in</a>
+          <a href="#" class="btn">Register</a>
+        </div> -->
+      </nav>
+
+      
+      <div class="content">
+        <h2>Welcome <span class="wtext">to</span><br /><span class="wtext">Bharat</span>Rails</h2>
+        <p>
+          Travel with us,<span class="wtext"> towards your happiness</span>
+        </p>
+      </div>
+      <br>
+      <br>
+      <div class="link">
+        <a href="fromto.jsp" class="hire">Book Train</a>
+        <a href="cancel.jsp" class="hire">Cancel Reservation</a>
+      </div>
+    </div>
+  </body>
+</html>

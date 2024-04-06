@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/choice.css" />
+    <title>BharatRails</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">Bharat<span>Rails.</span></a>
+      </div>
+      <ul>
+        <li><a href="choice.html">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </nav>
+    <br>
+    <br>
+    
+    <div class="cards">
+      <div class="card">
+          <figure>
+              <img src="./images/user2.png" />
+          </figure>
+          <div class="details">
+              <button onclick="loadNextPage1()">USER</button>
+          </div>
+      </div>
+      <div class="card">
+          <figure>
+              <img src="./images/admin2.png" />
+          </figure>
+          <div class="details">
+              <button onclick="loadNextPage()">ADMIN</button>
+          </div>
+      </div>
+  </div>
+    
+    <video id="loading-video" autoplay loop muted>
+        <source src="./images/delay_vid.mp4" type="video/mp4">
+    </video>
+
+    
+    <script>
+        function loadNextPage() {
+            document.getElementById('loading-video').style.display = 'block'; // Display the loading video
+            setTimeout(function() {
+                window.location.href = 'admin.jsp'; // Redirect to the next page after a delay
+            }, 2000); // Change the delay time (in milliseconds) as needed
+        }
+        function loadNextPage1() {
+            document.getElementById('loading-video').style.display = 'block'; // Display the loading video
+            setTimeout(function() {
+                window.location.href = 'user.html'; // Redirect to the next page after a delay
+            }, 2000); // Change the delay time (in milliseconds) as needed
+        }
+
+
+    </script>
+  </body>
+</html>
