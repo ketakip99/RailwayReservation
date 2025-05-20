@@ -1,23 +1,30 @@
-# Bharat Rails – Full Stack Railway Reservation Platform
+# 🚆 Bharat Rails | Java Full Stack Railway Reservation System
 
 ## Overview
-Bharat Rails is a railway reservation system designed using Java Full Stack technologies. The application enables users to book and manage railway tickets while allowing administrative control over train data and bookings.
+Bharat Rails is a full-stack web application that replicates key features of a real-world railway booking platform. It facilitates ticket booking, fare calculations, cancellations, and administrative controls.
 
-## Features
-- Book and cancel tickets with real-time availability checks.
-- Fare calculation based on route and class.
-- Admin dashboard for managing trains and transactions.
-- Responsive error messages for invalid inputs or unavailable services.
+## Team
+- Saniya Mahalle – UCE2021537  
+- Shreya Mote – UCE2021543  
+- Mihika Pandit – UCE2021546  
+- Ketaki Paranjape – UCE2021547
+
+## Key Features
+- 🔐 **User and Admin Authentication**
+- 🎟 **Booking Engine**: Class, seat selection, fare calculations.
+- ❌ **Cancellations**: Ticket deletion and refunds.
+- 🛠 **Admin Dashboard**: Add/edit trains, monitor transactions.
+- 🧾 **Receipts**: Real-time confirmation and summary.
 
 ## Technology Stack
-- HTML, CSS, JavaScript
-- JSP, Servlets
-- JDBC, MySQL
+- Frontend: HTML, CSS, JavaScript  
+- Backend: JSP, Servlets  
+- Database: JDBC, MySQL
 
-## Future Enhancements
-- Group bookings and user profiles
-- Promotional offers and discount codes
-- Notifications for train delays or schedule changes
+## Outcome
+The application offers a smooth, real-world simulation of an online railway booking system, demonstrating strong concepts in full-stack architecture and data management.
 
-## Conclusion
-Bharat Rails offers a streamlined user experience and robust backend functionality. It demonstrates effective application of full-stack principles in a real-world context.
+## Future Scope
+- Real-time train status and tracking  
+- Group ticketing  
+- Role-based access (Admin, Staff, User)
